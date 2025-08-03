@@ -1,0 +1,37 @@
+@media (max-width: 700px) {
+    h1{
+       margin: 0 auto;
+       text-align: center;
+    }
+    #skillsSoftwares{
+        flex-direction: column;
+        align-items: center;
+    }  
+    #skills, #softwares{
+        width: 90%;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    }
+    #skills h2{
+        justify-self: center;
+        margin-bottom: 2vh;
+    }
+    #softwares h2{
+        justify-self: center;
+        margin-bottom: 2vh;
+    }
+    .overlay{
+        width: 90vw;
+        height: 100vh;
+         top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .imgoverlay .vertimg img{
+        height:70vh;
+    }
+    .imgoverlay .horizimg img{
+        width: 80vw;
+        height:auto;
+    }
+}

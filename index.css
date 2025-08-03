@@ -1,0 +1,247 @@
+*{
+    margin:0;
+}
+html{
+    background-color: #FFFFEA;
+}
+nav{
+    background-color: #A4243B;
+    display:flex;
+    flex-direction: column;
+    height: 20vh;
+}
+.sariborder{
+    background-color: #A4243B;
+    display:flex;
+    height: 20vh;
+    background-image: url(assets/Artboard\ 1.webp);
+    background-repeat: repeat-x;
+    background-size: 9vh;
+    background-blend-mode: luminosity;
+}
+footer{
+    background-color: #A4243B;
+    display:flex;
+    height: 20vh;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+
+}
+#navbar li{
+    list-style-type: none;
+    margin: 1vh 4vh 1vh;
+}
+#navbar li a{
+    color:#FFFFEA;
+    text-decoration: none;
+}
+#navbar li:hover{
+    scale: 1.1 ;
+    cursor: pointer;
+}
+#navbar li a:hover{
+    color: #ffffff;
+}
+#projects:hover .dropdown{
+    transform: scaleY(1);
+}
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform-origin: top center;
+    transform:scaleY(0);
+    margin-left: -10vh;
+    background-color:#A4243B;
+    border-radius: 2vh;
+}
+.dropdown ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.dropdown li{
+    padding: 1vh;
+}
+.burger div{
+    background-color: #FFFFEA;
+}
+footer{
+    background-color: #A4243B;
+    display:flex;
+    flex-direction: column;
+    height: 20vh;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+
+}
+footer li{
+    list-style-type: none;
+    margin: 1vh 4vh 1vh;
+}
+footer li a{
+    color:#FFFFEA;
+    text-decoration: none;
+}
+footer li:hover{
+    scale: 1.1 ;
+    cursor: pointer;
+}
+footer li a:hover{
+    color:#ffffff;
+}
+h1{
+    color: #E36414;
+}
+h2{
+    color: #A4243B;
+}
+#firstSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6vh 1vh 2vh 1vh;
+    flex-direction: column;
+}
+#character{
+    position: relative;
+    z-index: 2;
+}
+#character img{
+    height: 56vh;
+}
+
+.thinSari{
+    border: 2px solid #C6D8AF;
+    display: flex;
+    margin: 1vh 0;
+}
+.thickSari{
+    border: 3vh solid #C6D8AF;
+    display: flex;
+}
+#skillsSoftwares{
+    display: flex;
+    justify-content: space-around;
+}
+#skills{
+    width: 40%;
+}
+#skills ul{
+    color: #04151F;
+}
+#softwares{
+    width: 40%;
+}
+#icons img{
+    width: 10vh;
+}
+button{
+    border: none;
+    margin: 2vh;
+    background-color: #FFFFEA;
+    color: #E36414;
+    font-size: medium;
+    width: 25vw;
+    padding: 1vh;
+    border-radius: 4vw;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #E36414;
+    color: #FFFFEA;
+}
+#mobileFoot{
+    display: none;
+}
+.kolam-wrapper1 {
+  position: absolute;
+  top:50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.kolam-wrapper2 {
+  position: absolute;
+  top:50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.kolam {
+  width: 30vh;
+  animation: spin 3s linear infinite;
+}
+
+.kolam2 {
+width: 30vh;
+  animation: spin2 3s linear infinite;
+}
+#bangles{
+    display:flex;
+    justify-content: space-around;
+}
+#bangles a img{
+    width: 20vw;
+}
+#bangles a:hover{
+    transform: rotate(20deg);
+    scale: 1.1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@media (max-width: 700px) {
+    #foot{
+        display: none;
+    }
+    #mobileFoot{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    #changingText{
+        font-size: 24px;
+    }
+    .kolam-wrapper1, .kolam-wrapper2{
+        left:50%;
+        top: 60%;
+    }
+    .kolam, .kolam2 {
+        width:70vw;
+    }
+    .kolam2{
+        opacity: 0.7;
+    }
+    #navbar{
+        background-color: #A4243B;
+    }
+    #firstSection{
+        margin-top: 4vh;
+    }
+    #bangles a img{
+    width: 30vw;
+}
+}

@@ -1,0 +1,126 @@
+nav{
+    background-color:#E36414;
+}
+.sariborder{
+    background-color: #E36414;
+    background-image: url(assets/1x/border2.webp);
+    background-size: 12vh;
+    background-blend-mode: screen;
+}
+footer{
+    background-color: #E36414;
+}
+#navbar li a{
+    color:#FFFFEA;
+}
+#navbar li a:hover{
+    color:#ffffff;
+}
+.dropdown {
+    margin-left:-10vw;
+    background-color:#E36414;
+}
+.burger div{
+    background-color: #FFFFEA;
+}
+footer{
+    background-color:#E36414 ;
+}
+footer li a{
+    color:#FFFFEA;
+}
+
+footer li a:hover{
+    color:#ffffff;
+}
+h1{
+    color: #A4243B;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#potli{
+    width: 20vw;
+    position:relative;
+    margin: 15vh 0;
+    z-index: 1;
+}
+.pottu{
+    position:absolute;
+    z-index: 0;
+    transition: transform 0.6s ease-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: center center;
+}
+.pottu img{
+    width:30vh;
+}
+#main.loaded .pottu:hover {
+  transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(1) rotate(20deg);
+}
+
+#main.loaded .pottu {
+  transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(1) rotate(var(--r));
+}
+
+@media (max-width: 700px) {
+  #navbar {
+    background-color: #E36414;
+  }
+
+  .dropdown {
+    margin-left: -16vw;
+  }
+
+  #potli {
+    width: 50vw;
+    display: block;
+    position: relative;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+    animation: fallDown 4s ease-out forwards;
+    transform: translateY(-100vh); /* start off-screen */
+  }
+  .pottu{
+    position: relative;
+    display: block;
+    margin: 2vh auto; 
+    left: auto; 
+    top: auto; 
+    
+  }
+
+  #main.loaded .pottu {
+    animation: riseUp 0.6s ease-out forwards;
+    animation-delay: calc(0.5s * var(--i)); /* staggered */
+    opacity: 0;
+  }
+
+
+
+  @keyframes fallDown {
+    from{
+        transform: translateY(-300vh)
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes riseUp {
+    from{
+        top:0%;
+        left:50%
+    }
+    to {
+      transform: translate(0, 0) rotate(var(--r));  ;
+      opacity: 1;
+    }
+  }
+}
