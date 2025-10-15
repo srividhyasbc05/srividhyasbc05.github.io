@@ -24,7 +24,10 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
+}
+nav #logo{
+    background-image: url(assets/logo.PNG);
+    background-blend-mode: multiply;
 }
 #navbar li{
     list-style-type: none;
@@ -83,6 +86,19 @@ footer ul{
     display: flex;
     flex-direction: row;
 
+}
+nav img{
+    width: 5vw;
+    height:auto;
+    cursor: pointer;
+    mix-blend-mode: screen;
+    top:10vw;
+    border: 1px solid black;
+}
+#navbar{
+    width:fit-content;
+    position: relative;
+    align-self: flex-end;
 }
 footer li{
     list-style-type: none;
